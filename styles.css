@@ -75,7 +75,7 @@ body, html {
 }
 
 /* Index page quote */
-.quote {
+section#quote {
   color: white;
   text-align: center;
   margin-top: 300px;
@@ -174,8 +174,7 @@ body, html {
 }
 
 
-
-/* Footer Styles */
+/* Footer Styles NEED TO UPDATE*/
 
 footer {
   width: 100%;
@@ -191,7 +190,7 @@ footer p {
 }
 
 
-/* Bottom Navigation List Styles */
+/* Bottom Navigation List Styles NEED TO UPDATE */
 
 nav#bottom {
   background-color: rgb(126, 66, 13);
@@ -209,7 +208,7 @@ nav#bottom ul a {
 }
 
 
-/* Bottom Navigation Styles */
+/* Bottom Navigation Styles  NEED TO UPDATE*/
 
 nav#bottom {
   display: -webkit-flex;
