@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+@import url("styles.css");
+
+
+/* Grid styles */ 
+.container-sm {
+  display: grid;
+}
+
+/* About Me headings */
+h2 {
+  text-align: center;
+  padding: 25px;
+}
+
+/* Job titles */
+h5 {
+  font-weight: bold;
+}
+
+/* Job descriptions */
+p {
+  font-size: 16px;
+}
+
+/* Go to Top button */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #5900b3;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
