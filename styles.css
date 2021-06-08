@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 @font-face {
   font-family: 'Sorts Mill Goudy';
   font-style: normal;
@@ -16,70 +18,32 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-/* Header on all pages */
-header {
-    font-size: 20px;
-    font-family: Arial;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    position: inherit;
-    left: 50%;
+/* ===============================
+	General Styles for All Devices
+   ===============================
+*/
+
+
+
+#top {
+  display: block;
+  margin-bottom: 100px;
 }
 
-/* Header style */
-ul li {
-    list-style-type: none;
-    display: inline-block;
+#projects {
+  display: inline-block;
+  margin-top: 700px;
 }
 
-/* Header characteristics */
-ul li a {
-    text-decoration: none;
-    color: white;
-    padding: 5px 20px;
-    border: 1px solid white;
-    transition: 0.5s ease;
+#myCarousel {
+  display: block;
+  margin-top: 900px;
+  margin-bottom: 100px;
+  
 }
 
-/* All page links */
-a:link {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-/* Links that have been visited */
-a:visited {
-  color: white;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-/* When hovering over all links */
-a:hover {
-  color: #5900b3;
-  background-color: white;
-  text-decoration: none;
-}
-
-/* Active page link */
-a.active {
-  color: #5900b3;
-  background-color: white;
-  text-decoration: none;
-}
-
-body, html {
-  height: 100%;
-}
-
-/* Index page quote */
-section#quote {
-  color: white;
-  text-align: center;
-  margin-top: 300px;
-  font-family: "Prata", Arial, sans-serif;
+h2 {
+  color: black;
 }
 
 /* Index page background */
@@ -89,14 +53,13 @@ section#quote {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100%;
-  min-width: 1024px;
 
   /* Set up proportionate scaling */
   width: 100%;
   height: auto;
 
   /* Set up positioning */
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
 }
@@ -107,75 +70,61 @@ section#quote {
   background-color: white;
   background-position: center;
   background-repeat: no-repeat;
-  height: 10%;
+  height: 100%;
 }
 
-/* Contact Me background
-.bg3 {
-  background-image: url("light-purple.jpg");
-  background-color: white;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100%;
-  min-width: 1024px;
-  top: 0;
-  left: 0;
-} */
-
-/* Contact Me headings */
-.contact-headings {
-  color: #5900b3;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
+/* Navigation Style */
+ul li {
+  list-style-type: none;
+  display: inline-block;
 }
 
-/* Contact Me and Interests heading */
-.contact-headings h2 {
-  font-family: Arial;
-  font-weight: bold;
-  top: 20%;
+/* Nav characteristics */
+ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 20px;
+  border: 1px solid white;
+  transition: 0.5s ease;
 }
 
-/* Contact Me headings */
-.contact-headings h4 {
-  font-family: "Sorts Mill Goudy", Arial;
+/* All page links */
+a:link {
+color: white;
+background-color: transparent;
+text-decoration: none;
 }
 
-
-/* Interests page heading */
-.interests-headings h2 {
-  color: #5900b3;
-  text-align: center;
-  font-family: Arial;
-  margin-top: 25px;
-  font-weight: bold;
+/* Links that have been visited */
+a:visited {
+color: white;
+background-color: transparent;
+text-decoration: none;
 }
 
-/* Interests table sizing */
-.container {
-  text-align: center;
-  margin: auto;
+/* Active page link */
+a.active {
+color: #5900b3;
+background-color: white;
+text-decoration: none;
 }
 
-/* Interests table attributes*/
-.table {
-  font-family: Arial, sans-serif;
-  font-size: 18px;
+/* Grid Styles */
+body {
+  display: grid;
 }
 
-/* Interest page table */
-.container int-table {
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  top: 30%;
-  left: 10%;
+body, html {
+  height: auto;
 }
 
+/* Quote animation */
+@keyframes fade_in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
 
-/* Footer Styles NEED TO UPDATE*/
-
+/* Footer Styles */
 footer {
   width: 100%;
 }
@@ -184,44 +133,123 @@ footer p {
   color: rgb(211, 211, 211);
   font-size: 0.9em;
   text-align: center;
-  background-color: rgb(78, 33, 0);
+  background-color: black;
   margin: 0px;
   padding: 10px 0px;
 }
 
+/* ============================================
+	Tablet and Desktop Devices: 481px or more 
+   ============================================
+*/
 
-/* Bottom Navigation List Styles NEED TO UPDATE */
+@media only screen and (min-width: 481px) {
 
-nav#bottom {
-  background-color: rgb(126, 66, 13);
-  color: rgb(211, 211, 211);
-  padding: 15px;
+  
+  header {
+    font-size: 20px;
+    font-family: Arial;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: center;
+  }
+
+  body {
+    display: flex;
+    flex-flow: row wrap;
+
+    width: 100%;
+    min-width: 481px;
+    max-width: 1280px;
+    margin: auto;
+    min-height: 100%;
+
+  }
+
+  /* When hovering over all links */
+  a:hover {
+    color: #5900b3;
+    background-color: white;
+    text-decoration: none;
+  }
+
+  /* Index page quote */
+  #quote {
+    color: white;
+    text-align: center;
+    font-family: "Prata", Arial, sans-serif;
+  }
+
+  /* Quote container */
+  .container-md {
+    margin-top: 220px;
+    animation-name: fade_in;
+    animation-duration: 4s;
+  }
+
 }
 
-nav#bottom ul li {
-  font-size: 1em;
-  line-height: 1.8em;
+/* ===============================
+	Mobile Styles up to 480 pixels
+   ===============================
+*/
+
+@media only screen and (max-width: 480px) {
+
+  header {
+    font-size: 8px;
+    font-family: Arial;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: center;
+  }
+
+  body {
+    background-color: white;
+    color: rgb(211, 211, 211);
+  }
+
+  ul {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  ul li {
+    flex: 1 1 130px;
+    font-size: 2.2em;
+  }
+
+  /* Index page quote */
+  #quote {
+    color: white;
+    text-align: center;
+    font-family: "Prata", Arial, sans-serif;
+    font-size: small;
+  }
+
+  /* Quote container */
+  .container-md {
+    margin-top: 50px;
+    animation-name: fade_in;
+    animation-duration: 4s;
+}
 }
 
-nav#bottom ul a {
-  color: white;
-}
 
 
-/* Bottom Navigation Styles  NEED TO UPDATE*/
 
-nav#bottom {
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
 
-nav#bottom ul {
-  flex: 0 1 150px;
-}
+
+
+
+
+
+
+
+
+
 
 
 
