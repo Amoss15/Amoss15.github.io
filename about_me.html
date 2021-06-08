@@ -3,128 +3,109 @@
 <html lang="en">
 <head>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
-    <link href="aboutme_styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
+    <link href="about_me.css" rel="stylesheet" />
+    <script src="scroll_btn.js" defer></script>
+
+     <!-- responsive viewport meta tag for Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>About Me</title>
 </head>
+
 <body>
     <div class="bg2">
         <header>
-            <div class="main">
+            <nav class="horizontal">
                 <ul>
                     <li><a href="index.html">Home </a></li>
                     <li><a href="interests.html">Interests</a></li>
                     <li><a href="about_me.html" class="active">About Me</a></li>
                     <li><a href="contact_me.html">Contact Me</a></li>
                 </ul>
-            </div>
+            </nav>
         </header>
     </div>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
+    <section id="scroll-btn"></section>
 
-<script>
-// button to scroll back to top of page
-var mybutton = document.getElementById("myBtn");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {
-    scrollFunction()
-};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-</script>
-
-    <div class="professional-experience">
+    <div class="container-sm">
 
         <h2>Professional Experience</h2>
+    
+        <h5>Regional Operations Manager</h5>
+        <h6>Company Name: Repipe Specialists<br>
+            Dates Employed: Nov 2018 – Present<br>
+            Employment Duration: 2 yrs<br>
+            Location: Burbank, CA<br></h6>
+        <p>As an operations manager serving Northern California in the Sacramento and San Francisco Bay Area regions,
+        I serve as a liaison between Repipe Specialists sales representatives, sub-contractors, and our clients.
+        I also frequently evaluate and reevaluate contracts for quality control purposes and to ensure that the work
+        can be performed by the assigned sub-contractor. I regularly work with clients to resolve reported issues that
+        arise due to resident, property manager, and/or homeowner concerns, inclement weather, emergencies or other
+        issues that may cause delays.</p>
 
-        <div class="container-md">
-            <h5>Regional Operations Manager</h5>
-            <h6>Company Name: Repipe Specialists<br>
-                Dates Employed: Nov 2018 – Present<br>
-                Employment Duration: 2 yrs<br>
-                Location: Burbank, CA<br></h6>
-            <p>As an operations manager serving Northern California in the Sacramento and San Francisco Bay Area regions,
-            I serve as a liaison between Repipe Specialists sales representatives, sub-contractors, and our clients.
-            I also frequently evaluate and reevaluate contracts for quality control purposes and to ensure that the work
-            can be performed by the assigned sub-contractor. I regularly work with clients to resolve reported issues that
-            arise due to resident, property manager, and/or homeowner concerns, inclement weather, emergencies or other
-            issues that may cause delays.</p>
-
-            <h5>Service Coordinator</h5>
-            <h6>Company Name: Ontario Refrigeration Service, Inc.<br>
-                Dates Employed: Aug 2017 – Nov 2018<br>
-                Employment Duration: 1 yr 4 mos<br>
-                Location: Glendale, CA<br></h6>
-            <p>As a service coordinator and dispatcher, I coordinated the daily schedules for no less than 15 heating,
-            ventilation, and air conditioning (HVAC) technicians, and scheduled routine and emergency HVAC services for
-            over 400 clients across Los Angeles County. In addition, I served as a liaison between HVAC technicians and
-            clients to facilitate fulfilling service requests, and performed routing administrative tasks.</p>
-
-
-            <h5>Administrative Services Associate</h5>
-            <h6>Company Name: California State University, Los Angeles<br>
-                Dates Employed: Nov 2013 – Aug 2017<br>
-                Employment Duration: 3 yrs 10 mos<br>
-                Location: Los Angeles, CA<br></h6>
-            <p>Primarily a communications role, I led a social media marketing team consisting of a videographer and a graphic designer,
-            and managed the social media content across various accounts including Twitter, Facebook, and Instagram. In addition to
-            creating content targeted at university students, we assisted in the re-branding of the organization. I also co-managed an
-            online database that aids students on their career journey and allows employers to connect with students and alumni.</p>
-
-            <p>Aside from performing routine administrative tasks, the administrative side of the role allowed me to assist in the
-            execution of university events, including career fairs, guest panels, and special events like etiquette luncheons.</p>
+        <h5>Service Coordinator</h5>
+        <h6>Company Name: Ontario Refrigeration Service, Inc.<br>
+            Dates Employed: Aug 2017 – Nov 2018<br>
+            Employment Duration: 1 yr 4 mos<br>
+            Location: Glendale, CA<br></h6>
+        <p>As a service coordinator and dispatcher, I coordinated the daily schedules for no less than 15 heating,
+        ventilation, and air conditioning (HVAC) technicians, and scheduled routine and emergency HVAC services for
+        over 400 clients across Los Angeles County. In addition, I served as a liaison between HVAC technicians and
+        clients to facilitate fulfilling service requests, and performed routing administrative tasks.</p>
 
 
-            <h5>M.F.A. Graduate Student in Creative Writing</h5>
-            <h6>Company Name: California State University, Los Angeles<br>
-                Dates Employed: Sep 2013 – May 2017<br>
-                Employment Duration: 3 yrs 9 mos<br>
-                Location: Los Angeles, CA<br></h6>
-            <p>As a graduate student in an M.F.A. program in Television, Film, and Theater with a focus on writing, I gained 4 years of
-            experience in writing for TV, film, and stage and wrote numerous scripts for each medium. I gained experience in providing
-            script coverage for screenplays and stageplays in multiple genres and collaborated with peers to develop scripts in genres
-            including comedy, drama, and science-fiction. I was ultimately able to experience working in a variety of creative roles
-            through different projects, including showrunner, casting assistant, production assistant, and audio assistant.</p>
-
-            <h5>Graduate Assistant</h5>
-            <h6>Company Name: California State University, Los Angeles<br>
-            Dates Employed: Sep 2015 – Jul 2016<br>
-            Employment Duration: 11 mos<br>
+        <h5>Administrative Services Associate</h5>
+        <h6>Company Name: California State University, Los Angeles<br>
+            Dates Employed: Nov 2013 – Aug 2017<br>
+            Employment Duration: 3 yrs 10 mos<br>
             Location: Los Angeles, CA<br></h6>
-            <p>Part-time graduate assistant for the Department of Television, Film, and Media Studies where I supported a faculty member with
-            classroom tasks and administrative assistance.</p>
+        <p>Primarily a communications role, I led a social media marketing team consisting of a videographer and a graphic designer,
+        and managed the social media content across various accounts including Twitter, Facebook, and Instagram. In addition to
+        creating content targeted at university students, we assisted in the re-branding of the organization. I also co-managed an
+        online database that aids students on their career journey and allows employers to connect with students and alumni.</p>
 
-            <h2>Interesting Things About Me</h2><br>
+        <p>Aside from performing routine administrative tasks, the administrative side of the role allowed me to assist in the
+        execution of university events, including career fairs, guest panels, and special events like etiquette luncheons.</p>
 
-            <h5>Received an MFA in Writing</h5>
-            <p>I received my MFA in Television, Film, and Theater Arts with an option in Writing at California State University, Los Angeles.
-            One of the best things about graduating from the program is the variety of work that I was able to do -
-            I wasn't constrained to one medium. I was able to explore so many different types of writing, and if it wasn't for my lack of
-            contacts in the gaming industry, my thesis would've been a full-fledged sci-fi video game script. But alas, my thesis became a
-            wonderful sci-fi feature screenplay instead.</p>
 
-            <h5>Born in Alaska and Raised in Germany</h5>
-            <p>My father enlisted in the Army before I was born, which led to moving around quite a lot every few years. Between the ages of
-            10 and 18, I lived in Germany - Bad Kreuznach and Hanau - only returning to the states once in 1999 to visit my home state of
-            California. </p>
+        <h5>M.F.A. Graduate Student in Creative Writing</h5>
+        <h6>Company Name: California State University, Los Angeles<br>
+            Dates Employed: Sep 2013 – May 2017<br>
+            Employment Duration: 3 yrs 9 mos<br>
+            Location: Los Angeles, CA<br></h6>
+        <p>As a graduate student in an M.F.A. program in Television, Film, and Theater with a focus on writing, I gained 4 years of
+        experience in writing for TV, film, and stage and wrote numerous scripts for each medium. I gained experience in providing
+        script coverage for screenplays and stageplays in multiple genres and collaborated with peers to develop scripts in genres
+        including comedy, drama, and science-fiction. I was ultimately able to experience working in a variety of creative roles
+        through different projects, including showrunner, casting assistant, production assistant, and audio assistant.</p>
 
-        </div>
+        <h5>Graduate Assistant</h5>
+        <h6>Company Name: California State University, Los Angeles<br>
+        Dates Employed: Sep 2015 – Jul 2016<br>
+        Employment Duration: 11 mos<br>
+        Location: Los Angeles, CA<br></h6>
+        <p>Part-time graduate assistant for the Department of Television, Film, and Media Studies where I supported a faculty member with
+        classroom tasks and administrative assistance.</p>
+
+        <h2>Interesting Things About Me</h2><br>
+
+        <h5>Received an MFA in Writing</h5>
+        <p>I received my MFA in Television, Film, and Theater Arts with an option in Writing at California State University, Los Angeles.
+        One of the best things about graduating from the program is the variety of work that I was able to do -
+        I wasn't constrained to one medium. I was able to explore so many different types of writing, and if it wasn't for my lack of
+        contacts in the gaming industry, my thesis would've been a full-fledged sci-fi video game script. But alas, my thesis became a
+        wonderful sci-fi feature screenplay instead.</p>
+
+        <h5>Born in Alaska and Raised in Germany</h5>
+        <p>My father enlisted in the Army before I was born, which led to moving around quite a lot every few years. Between the ages of
+        10 and 18, I lived in Germany - Bad Kreuznach and Hanau - only returning to the states once in 1999 to visit my home state of
+        California. </p>
 
     </div>
+
 </body>
 </html>
