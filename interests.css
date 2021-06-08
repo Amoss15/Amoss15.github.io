@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+@import url("styles.css");
+
+  /* Interests page heading */
+  div#interests-headings h3 {
+    color: #5900b3;
+    text-align: center;
+    font-family: Arial;
+    margin-top: 25px;
+    font-weight: bold;
+  }
+  
+  /* Interests table sizing */
+  div#mytable {
+    text-align: center;
+    margin: auto;
+  }
+  
+  /* Interests table attributes*/
+  div#mytable {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+  }
+  
+  /* Interests page table */
+  .table-responsive {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
