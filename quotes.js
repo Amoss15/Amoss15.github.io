@@ -13,7 +13,7 @@ function randomInt(lowest, size) {  // generate random integer between 0 and 9
   
   function getQuote(n) {
      var quotes = [
-     "<h1>" + "Our first computers were born not out of greed or ego, but in the revolutionary spirit of helping common people rise above the most powerful institutions." + "</h1>" + "<br>" + "<h3>" + "― Steve Wozniak" + '</h3>',
+     "<h1>" + "<q>Our first computers were born not out of greed or ego, but in the revolutionary spirit of helping common people rise above the most powerful institutions.</q>" + "</h1>" + "<br>" + "<h3>" + "― Steve Wozniak" + '</h3>',
      "Testing.",
      ];
      
