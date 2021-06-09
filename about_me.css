@@ -2,10 +2,48 @@
 
 @import url("styles.css");
 
+#page-heading h1 {
+  color: black;
+  text-align: left;
+  font-family: "Prata";
+  font-weight: bold;
+  text-shadow: 2px 2px 8px #888888;
+}
+
+#page-heading h3 {
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: #5900b3;
+  margin-right: 20px;
+  text-shadow: 2px 2px 8px #888888;
+}
 
 /* Grid styles */ 
-.container-sm {
+.container-sm#resume {
   display: grid;
+  margin-bottom: 100px;
+  box-shadow: 5px 10px 8px 10px #888888;
+}
+
+.container-sm#page-heading {
+  display: grid;
+  margin-bottom: 50px;
+}
+
+/* Vertical Lines */
+.vll {
+  border-left: 30px solid #5900b3;
+  margin-right: 8px;
+}
+
+.vlr {
+  border-right: 30px solid #5900b3;
+  margin-left: 8px;
+}
+
+#resume h5, #resume h6, #resume p {
+  padding-left: 8px;
 }
 
 /* About Me headings */
@@ -24,23 +62,3 @@ p {
   font-size: 16px;
 }
 
-/* Go to Top button */
-#myBtn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: #5900b3;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 4px;
-}
-
-#myBtn:hover {
-  background-color: #555;
-}
