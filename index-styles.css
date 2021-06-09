@@ -28,11 +28,7 @@
     left: 0;
 }
 
-/* Projects Container */
-#projects {
-    display: inline-block;
-    margin-top: 700px;
-}
+
 
 /* Carousel */
 #myCarousel {
@@ -47,11 +43,6 @@
     font-family: "Prata";
     font-weight: bold;
     padding-bottom: 50px;
-}
-
-#projects {
-   padding-top: 150px;
-    width: 100%;
 }
 
 /* Quote animation */
@@ -88,6 +79,15 @@
     animation-name: fade_in;
     animation-duration: 4s;
   }
+
+  /* Projects Container */
+  .container#projects {
+    padding-top: 15px;
+    width: 100%;
+    display: inline-block;
+    margin-top: 750px;
+ }
+
 }
 
 /* ===============================
@@ -102,19 +102,24 @@
         color: white;
         text-align: center;
         font-family: "Prata", Arial, sans-serif;
-        font-size: 18px;
+        font-size: 22px;
     }
 
     #name {
         color: white;
         text-align: center;
         font-family: "Prata", Arial, sans-serif;
-        font-size: 12px;
+        font-size: 18px;
     }
 
     /* Quote container */
     .container-md {
         animation-name: fade_in;
         animation-duration: 4s;
+    }
+
+    .container#projects {
+        padding-top: 800px;
+        display: inline-block;
     }
 }
