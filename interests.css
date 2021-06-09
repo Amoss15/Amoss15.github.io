@@ -11,7 +11,7 @@
   /* Interests heading */
   #interests-headings h1 {
     color: black;
-    font-family: "Prata";
+    font-family: "Orbitron";
     font-weight: bold;
     top: 20%;
     text-shadow: 2px 2px 8px #888888;
@@ -19,7 +19,7 @@
 
 /* Contact Me headings */
   #interests-headings h4 {
-    font-family: Arial;
+    font-family: "Orbitron";
     color: #5900b3;
     font-weight: bold;
 }
