@@ -13,9 +13,9 @@
 </head>
 
 <body>
-  <div class="bg2">
+  <div id="top-bg2">
     <header>
-        <nav class="horizontal">
+        <nav class="container">
           <ul>
               <li><a href="index.html">Home </a></li>
               <li><a href="interests.html" class="active">Interests</a></li>
@@ -26,13 +26,23 @@
       </header>
   </div>
    
+  <div id="interests-headings" class="container-sm">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>Interests</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">      
+            <h4>Check Out What I'm Currently Checking Out...</h4>
+        </div>
+    </div>
+</div>
 
-  <div id="interests-headings" class="container-fluid">
-      <h3>Check Out What I'm Currently Checking Out...</h3>
-  </div>
+  
 
-  <div id="mytable" class="table-responsive">
-    <table class="table table-condensed table-bordered table-hover">
+  <div id="mytable" >
+    <table class="table table-condensed table-bordered table-hover table-responsive">
       <thead class="thead-dark">
         <tr>
           <th scope="col">What?</th>
@@ -44,7 +54,7 @@
         <tr>
           <th scope="row">Gaming</th>
           <td>I have a lifelong attachment to and passion for video games.</td>
-          <td>Checking out Unreal Engine.<br> I  enjoy looking at Sims mods. </td>
+          <td>Checking out Unreal Engine. I  enjoy looking at Sims mods. </td>
         </tr>
         <tr>
           <th scope="row">Artificial Intelligence</th>
@@ -54,14 +64,17 @@
         <tr>
           <th scope="row">Writing</th>
           <td>I went to graduate school and received an MFA, because I love creating things...
-          <br>Just like coding, it's an amazing feeling to create something, see it through to fruition,
-          <br> and have it experienced by other people.</td>
-          <td>Check out my latest script here: </td>
+          Just like coding, it's an amazing feeling to create something, see it through to fruition,
+          and have it experienced by other people.</td>
+          <td>Check out a portion of my thesis screenplay here: </td>
         </tr>
       </tbody>
     </table>
   </div>
   
+  <footer>
+    <p>Copyright</p>
+  </footer>
 
 <!-- JavaScript for Bootstrap -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
