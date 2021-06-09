@@ -5,14 +5,14 @@
 #page-heading h1 {
   color: black;
   text-align: left;
-  font-family: "Prata";
+  font-family: "Orbitron";
   font-weight: bold;
   text-shadow: 2px 2px 8px #888888;
 }
 
 #page-heading h3 {
   text-align: right;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Orbitron";
   font-weight: bold;
   color: #5900b3;
   margin-right: 20px;
@@ -50,6 +50,7 @@
 h2 {
   text-align: center;
   padding: 25px;
+  font-family: Arial;
 }
 
 /* Job titles */
