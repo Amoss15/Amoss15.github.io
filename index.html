@@ -4,10 +4,12 @@
 <head>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-
+    <link href="index-styles.css" rel="stylesheet">
+    <link href="top_btn.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="scroll_btn.js" defer></script>
     <script src="quotes.js" defer></script>
 
     <!-- responsive viewport meta tag for Bootstrap -->
@@ -17,43 +19,56 @@
 
 <body>
  
-    <div id="top" class="bg">
+    <div id="top-bg1">
         <header>
-            <nav class="container">
-              <div class="row">
-                <ul>
-                    <li><a href="index.html" class="active">Home </a></li>
-                    <li><a href="interests.html">Interests</a></li>
-                    <li><a href="about_me.html">About Me</a></li>
-                    <li><a href="contact_me.html">Contact Me</a></li>
+          <div class="container">
+            <nav>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a href="index.html" class="active">Home </a></li>
+                    <li class="nav-item"><a href="interests.html">Interests</a></li>
+                    <li class="nav-item"><a href="about_me.html">About Me</a></li>
+                    <li class="nav-item"><a href="contact_me.html">Contact Me</a></li>
                 </ul>
-              </div>
             </nav>
+          </div>
+
         </header>
+
         <div class="container-md">
-          <secton id="quote"></secton>
+          <section id="quote"></section>
         </div>
+
     </div>
 
-    <h2>Welcome to My Page</h2>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <section id="scroll-btn"></section>
 
     <!-- Projcts/Code -->
     <div id="projects" class="container">
+      <h1 id="welcome">Hi, I'm Alicia.<br>Full-Stack Engineer</h1>
       <div class="row">
-        <div id="cpp" class="col-sm">
+        <div id="cpp" class="col-sm img-fluid">
+          <img src="cpp.jpg" alt="C++ Logo" width="250" height="250">
           C/C++ 
         </div>
         <div id="python" class="col-sm">
+          <img src="python.jpg" alt="Python Logo" width="250" height="250">
           Python
         </div>
         <div id="java" class="col-sm">
+          <img src="java.jpg" alt="Java Logo" width="250" height="250">
+          Java
+        </div>
+        <div id="btst" class="col-sm">
+          <img src="bootstrap.jpg" alt="Bootstrap Logo" width="250" height="250">
           Java
         </div>
       </div>
     </div>
     
     <!-- Carousel -->
-    <div class="container-fluid">
+    <div id="caro" class="container-sm">
         
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
