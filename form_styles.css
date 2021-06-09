@@ -16,13 +16,19 @@ input[type=text], select, textarea {
   }
 
   /* Grid style */
-  .container-sm {
+  .container-sm#myform {
     color: #5900b3;
     border-radius: 5px;
     background-color: #f2e6ff;
     top: 25%;
     width: 50%;
     box-shadow: 5px 10px 8px 10px #888888;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .container-sm {
+    padding-top: 10x;
   }
   
   /* Submit button */
@@ -44,23 +50,25 @@ input[type=text], select, textarea {
 /* Headings */
 
 /* Contact Me headings */
-.contact-headings {
-  color: #5900b3;
+#contact-headings {
   text-align: center;
-  margin-top: 40px;
   margin-bottom: 20px;
 }
 
 /* Contact Me and Interests heading */
-.contact-headings h2 {
-  font-family: Arial;
+#contact-headings h1 {
+  color: black;
+  font-family: "Prata";
   font-weight: bold;
   top: 20%;
+  text-shadow: 2px 2px 8px #888888;
 }
 
 /* Contact Me headings */
-.contact-headings h4 {
-  font-family: "Sorts Mill Goudy", Arial;
+#contact-headings h4 {
+  font-family: Arial;
+  color: #5900b3;
+  font-weight: bold;
 }
   
   
