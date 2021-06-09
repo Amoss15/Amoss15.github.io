@@ -2,29 +2,48 @@
 
 @import url("styles.css");
 
-  /* Interests page heading */
-  div#interests-headings h3 {
-    color: #5900b3;
+  /* Interests heading alignment */
+  #interests-headings  {
     text-align: center;
-    font-family: Arial;
-    margin-top: 25px;
+    margin-bottom: 20px;
+  }
+
+  /* Interests heading */
+  #interests-headings h1 {
+    color: black;
+    font-family: "Prata";
     font-weight: bold;
+    top: 20%;
+    text-shadow: 2px 2px 8px #888888;
+}
+
+/* Contact Me headings */
+  #interests-headings h4 {
+    font-family: Arial;
+    color: #5900b3;
+    font-weight: bold;
+}
+
+  .container-sm#interests-headings {
+    padding-bottom: 20px;
   }
   
   /* Interests table sizing */
-  div#mytable {
+  #mytable {
     text-align: center;
-    margin: auto;
+    margin-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
   }
   
   /* Interests table attributes*/
-  div#mytable {
+  #mytable {
     font-family: Arial, sans-serif;
     font-size: 18px;
   }
   
   /* Interests page table */
-  .table-responsive {
+  #mytable {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
