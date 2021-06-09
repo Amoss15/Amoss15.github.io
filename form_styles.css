@@ -47,8 +47,7 @@ input[type=text], select, textarea {
   }
 
 
-/* Headings */
-
+/* Headers */
 /* Contact Me headings */
 #contact-headings {
   text-align: center;
@@ -58,15 +57,16 @@ input[type=text], select, textarea {
 /* Contact Me and Interests heading */
 #contact-headings h1 {
   color: black;
-  font-family: "Prata";
+  font-family: "Orbitron";
   font-weight: bold;
   top: 20%;
   text-shadow: 2px 2px 8px #888888;
+  padding-bottom: 10px;
 }
 
 /* Contact Me headings */
 #contact-headings h4 {
-  font-family: Arial;
+  font-family: "Orbitron";
   color: #5900b3;
   font-weight: bold;
 }
