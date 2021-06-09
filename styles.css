@@ -18,6 +18,15 @@
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
+@font-face {
+  font-family: 'Orbitron';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/orbitron/v17/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyKS6BoWgz.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 /* ===============================
 	General Styles for All Devices
    ===============================
@@ -45,8 +54,6 @@ body, html {
   height: 100%;
   min-width: 100%;
 }
-
-
 
 /* All page links */
 a:link {
@@ -121,19 +128,21 @@ footer p {
   }
 
   /* Navigation Style */
-  ul li {
+  ul li, .navbar ul {
     list-style-type: none;
     display: inline-block;
     flex: 1 1 auto;
+    font-family: "Orbitron";
   }
 
   /* Nav characteristics */
-  ul li a {
+  ul li a, ul a {
     text-decoration: none;
     color: white;
     padding: 5px 20px;
     border: 1px solid white;
     transition: 0.5s ease;
+    font-family: "Orbitron";
   }
 
   /* When hovering over all links */
@@ -153,7 +162,7 @@ footer p {
 @media only screen and (max-width: 575px) {
 
   header {
-    font-size: 8px;
+    font-size: 20px;
     font-family: Arial;
     color: white;
     text-align: center;
@@ -180,14 +189,20 @@ footer p {
 
   ul li {
     flex: 1 1 130px;
-    font-size: 2.2em;
+    font-size: 1.17em;
+    font-family: "Orbitron";
+  }
+
+  #top-bg2 ul {
+    flex: 1 1 130px;
+    font-size: 1.17em;
   }
 
   /* Nav characteristics */
-  ul li a {
+  ul li a, ul a {
     text-decoration: none;
     color: white;
-    border: 3px solid white;
+    border: 1px solid white;
     transition: 0.5s ease;
   }
 }
