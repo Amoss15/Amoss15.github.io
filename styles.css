@@ -23,70 +23,30 @@
    ===============================
 */
 
-
-
-#top {
-  display: block;
-  margin-bottom: 100px;
+/* Grid and Page Styles */
+body {
+  display: grid;
 }
 
-#projects {
-  display: inline-block;
-  margin-top: 700px;
-}
-
-#myCarousel {
-  display: block;
-  margin-top: 900px;
-  margin-bottom: 100px;
-  
-}
-
-h2 {
-  color: black;
-}
-
-/* Index page background */
-.bg {
-  background-image: url("fractals.jpg");
-  background-color: black;
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 100%;
-
-  /* Set up proportionate scaling */
-  width: 100%;
+body, html {
   height: auto;
-
-  /* Set up positioning */
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 /* Header background on all pages except index */
-.bg2 {
+#top-bg2 {
+  display: block;
+  margin-bottom: 100px;
+
+  position: relative;
   background-image: url("fractals.jpg");
   background-color: white;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
+  min-width: 100%;
 }
 
-/* Navigation Style */
-ul li {
-  list-style-type: none;
-  display: inline-block;
-}
 
-/* Nav characteristics */
-ul li a {
-  text-decoration: none;
-  color: white;
-  padding: 5px 20px;
-  border: 1px solid white;
-  transition: 0.5s ease;
-}
 
 /* All page links */
 a:link {
@@ -109,24 +69,10 @@ background-color: white;
 text-decoration: none;
 }
 
-/* Grid Styles */
-body {
-  display: grid;
-}
-
-body, html {
-  height: auto;
-}
-
-/* Quote animation */
-@keyframes fade_in {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
 /* Footer Styles */
 footer {
   width: 100%;
+  display: inline-block;
 }
 
 footer p {
@@ -134,24 +80,25 @@ footer p {
   font-size: 0.9em;
   text-align: center;
   background-color: black;
-  margin: 0px;
-  padding: 10px 0px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  padding-top: 10px; 
+  padding-bottom: 10px;
 }
 
 /* ============================================
-	Tablet and Desktop Devices: 481px or more 
+	Tablet and Desktop Devices: 576px or more 
    ============================================
 */
 
-@media only screen and (min-width: 481px) {
-
+@media only screen and (min-width: 576px) {
   
   header {
     font-size: 20px;
     font-family: Arial;
     color: white;
     text-align: center;
-    padding: 15px;
+    /*padding: 15px;*/
     position: center;
   }
 
@@ -160,11 +107,33 @@ footer p {
     flex-flow: row wrap;
 
     width: 100%;
-    min-width: 481px;
-    max-width: 1280px;
+    min-width: 576px;
+    max-width: 1920px;
     margin: auto;
     min-height: 100%;
 
+  }
+
+  ul {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 40px;
+  }
+
+  /* Navigation Style */
+  ul li {
+    list-style-type: none;
+    display: inline-block;
+    flex: 1 1 auto;
+  }
+
+  /* Nav characteristics */
+  ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid white;
+    transition: 0.5s ease;
   }
 
   /* When hovering over all links */
@@ -174,28 +143,14 @@ footer p {
     text-decoration: none;
   }
 
-  /* Index page quote */
-  #quote {
-    color: white;
-    text-align: center;
-    font-family: "Prata", Arial, sans-serif;
-  }
-
-  /* Quote container */
-  .container-md {
-    margin-top: 220px;
-    animation-name: fade_in;
-    animation-duration: 4s;
-  }
-
 }
 
 /* ===============================
-	Mobile Styles up to 480 pixels
+	Mobile Styles up to 575 pixels
    ===============================
 */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 575px) {
 
   header {
     font-size: 8px;
@@ -207,8 +162,15 @@ footer p {
   }
 
   body {
-    background-color: white;
-    color: rgb(211, 211, 211);
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 575px;
+    min-height: 100%;
+
+  }
+
+  footer {
+    order: 100;
   }
 
   ul {
@@ -221,20 +183,13 @@ footer p {
     font-size: 2.2em;
   }
 
-  /* Index page quote */
-  #quote {
+  /* Nav characteristics */
+  ul li a {
+    text-decoration: none;
     color: white;
-    text-align: center;
-    font-family: "Prata", Arial, sans-serif;
-    font-size: small;
+    border: 3px solid white;
+    transition: 0.5s ease;
   }
-
-  /* Quote container */
-  .container-md {
-    margin-top: 50px;
-    animation-name: fade_in;
-    animation-duration: 4s;
-}
 }
 
 
