@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+@import url("styles.css");
+
+/* ===============================
+	General Styles for All Devices
+   ===============================
+*/
+
+/* Index page background */
+#top-bg1 {
+    display: block;
+    margin-bottom: 100px;
+
+    background-image: url("fractals.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+
+    /* Set up positioning */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Projects Container */
+#projects {
+    display: inline-block;
+    margin-top: 700px;
+}
+
+/* Carousel */
+#myCarousel {
+    display: block;
+    margin-top: 1000px;
+    margin-bottom: 100px; 
+}
+
+#welcome {
+    color: black;
+    text-align: center;
+    font-family: "Prata";
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+#projects {
+   padding-top: 150px;
+    width: 100%;
+}
+
+/* Quote animation */
+@keyframes fade_in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* ============================================
+	Tablet and Desktop Devices: 576px or more 
+   ============================================
+*/
+
+@media only screen and (min-width: 576px) {
+
+    /* Index page quote */
+  #quotation {
+    color: white;
+    text-align: center;
+    font-family: "Prata", Arial, sans-serif;
+    font-size: 2em;
+  }
+
+  #name {
+    color: white;
+    text-align: center;
+    font-family: "Prata", Arial, sans-serif;
+    font-size: 1.17em;
+  }
+
+  /* Quote container */
+  .container-md {
+    margin-top: 220px;
+    animation-name: fade_in;
+    animation-duration: 4s;
+  }
+}
+
+/* ===============================
+	Mobile Styles up to 575 pixels
+   ===============================
+*/
+
+@media only screen and (max-width: 575px) {
+    
+    /* Index page quote */
+    #quotation {
+        color: white;
+        text-align: center;
+        font-family: "Prata", Arial, sans-serif;
+        font-size: 18px;
+    }
+
+    #name {
+        color: white;
+        text-align: center;
+        font-family: "Prata", Arial, sans-serif;
+        font-size: 12px;
+    }
+
+    /* Quote container */
+    .container-md {
+        animation-name: fade_in;
+        animation-duration: 4s;
+    }
+}
