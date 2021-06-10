@@ -35,6 +35,8 @@
 /* Grid and Page Styles */
 body {
   display: grid;
+  background-color:  #f0efef;
+  min-width: fit-content;
 }
 
 body, html {
@@ -43,7 +45,7 @@ body, html {
 
 /* Header background on all pages except index */
 #top-bg2 {
-  display: block;
+  display: inline-block;
   margin-bottom: 100px;
 
   position: relative;
@@ -51,7 +53,7 @@ body, html {
   background-color: white;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100%;
+  height: 100px;
   min-width: 100%;
 }
 
@@ -80,6 +82,9 @@ text-decoration: none;
 footer {
   width: 100%;
   display: inline-block;
+  position: sticky;
+  bottom: 0;
+  height: 2em;
 }
 
 footer p {
@@ -106,13 +111,11 @@ footer p {
     color: white;
     text-align: center;
     /*padding: 15px;*/
+    margin-top: 20px;
     position: center;
   }
 
   body {
-    display: flex;
-    flex-flow: row wrap;
-
     width: 100%;
     min-width: 576px;
     max-width: 1920px;
@@ -171,16 +174,11 @@ footer p {
   }
 
   body {
-    display: flex;
-    flex-flow: row wrap;
-    max-width: 575px;
     min-height: 100%;
 
   }
 
-  footer {
-    order: 100;
-  }
+ 
 
   ul {
     display: flex;
