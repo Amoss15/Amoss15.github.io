@@ -28,24 +28,48 @@
     padding-bottom: 20px;
   }
   
-  /* Interests table sizing */
-  #mytable {
-    text-align: center;
-    margin-right: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
+ 
   
   /* Interests table attributes*/
-  #mytable {
+  .container-md#mytable {
     font-family: Arial, sans-serif;
-    font-size: 18px;
+    font-size: 1.17em;
+    background-color: white;
+    border: #5900b3;
   }
   
-  /* Interests page table */
-  #mytable {
+
+  
+/* ============================================
+	Screens 576px or more 
+   ============================================
+ */
+
+
+@media only screen and (min-width: 576) {
+
+   /* Interests table sizing */
+   #mytable {
     text-align: center;
-    margin-right: auto;
-    margin-left: auto;
+    margin-left: 100px;
+    margin-right: 100px;
   }
-  
+}
+
+
+/* ===============================
+	 Screens up to 575 pixels
+   ===============================
+*/
+
+
+@media only screen and (max-width: 575) {
+
+  /* Interests table sizing */ 
+   #mytable {
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+}
