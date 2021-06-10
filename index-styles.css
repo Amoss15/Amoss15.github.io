@@ -7,6 +7,7 @@
    ===============================
 */
 
+
 /* Index page background */
 #top-bg1 {
     display: block;
@@ -28,27 +29,81 @@
     left: 0;
 }
 
-
-
 /* Carousel */
 #myCarousel {
-    display: block;
-    margin-top: 1000px;
+    margin-top: 100px;
     margin-bottom: 100px; 
 }
 
-#welcome {
+.container-md#welcome {
     color: black;
     text-align: center;
     font-family: "Prata";
     font-weight: bold;
-    padding-bottom: 50px;
+    margin-top: 700px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 /* Quote animation */
 @keyframes fade_in {
     0% {opacity: 0;}
     100% {opacity: 1;}
+}
+
+#projects p {
+    font-size: 1.17em;
+    text-align: right;
+}
+
+.container.row {
+    text-align: center;
+}
+
+#row2 {
+    padding-top: 50px;
+}
+
+.col-sm {
+    text-align: center;
+}
+
+.carousel-caption h1 span {
+    display: block;
+    color: black;
+    font-family: "Orbitron";
+    font-weight: bold;
+    top: 20%;
+    text-shadow: 2px 2px 8px #888888;
+}
+
+.carousel-caption #p1 {
+    display: block;
+    color: white;
+    font-weight: bold;
+    top: 20%;
+}
+
+.carousel-caption #p2, #p3 {
+    display: block;
+    color: #f3e8ff;
+    font-weight: bold;
+    top: 20%;
+    background-color: black;
+}
+
+h1#caro-cap {
+    font-family: "Prata";
+    color: black;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h2#caro-cap {
+    font-family: "Prata";
+    color: black;
+    text-align: center;
+    font-weight: bold;
 }
 
 /* ============================================
@@ -74,18 +129,18 @@
   }
 
   /* Quote container */
-  .container-md {
+  .container-md #quote {
     margin-top: 220px;
     animation-name: fade_in;
     animation-duration: 4s;
   }
 
   /* Projects Container */
-  .container#projects {
-    padding-top: 15px;
+  .container #projects {
+    padding-top: 2em;
     width: 100%;
     display: inline-block;
-    margin-top: 750px;
+    background-color: white;
  }
 
 }
@@ -113,13 +168,18 @@
     }
 
     /* Quote container */
-    .container-md {
+    .container-md #quote {
         animation-name: fade_in;
         animation-duration: 4s;
     }
 
-    .container#projects {
-        padding-top: 800px;
+    .container #projects {
+        padding-top: 50px;
         display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+        min-width: fit-content;
+        
+        background-color: white;
     }
 }
