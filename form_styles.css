@@ -19,12 +19,14 @@ input[type=text], select, textarea {
   .container-sm#myform {
     color: #5900b3;
     border-radius: 5px;
-    background-color: #f2e6ff;
+    background-color: #e3ccfc;
     top: 25%;
     width: 50%;
     box-shadow: 5px 10px 8px 10px #888888;
     padding-top: 10px;
     padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
   }
 
   .container-sm {
@@ -52,6 +54,7 @@ input[type=text], select, textarea {
 #contact-headings {
   text-align: center;
   margin-bottom: 20px;
+
 }
 
 /* Contact Me and Interests heading */
