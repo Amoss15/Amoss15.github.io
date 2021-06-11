@@ -8,6 +8,7 @@
   font-weight: bold;
   text-shadow: 2px 2px 8px #888888;
   text-align: left;
+  font-size: 3em;
 }
 
 #page-heading h3 {
@@ -42,7 +43,7 @@
   margin-left: 8px;
 }
 
-#resume h5, #resume h6, #resume p {
+#resume h3, #resume h4, #resume p {
   padding-left: 8px;
 }
 
@@ -50,25 +51,31 @@
 h2 {
   text-align: center;
   padding: 25px;
-  font-family: Arial;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Job titles */
-h5 {
+h3 {
   font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Job descriptions */
 p {
-  font-size: 16px;
+  font-size: 1.17em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p#final {
+  padding-bottom: 20px;
 }
 
 /* ===============================
-  Screens 481 pixels and above
+  Screens 577 pixels and above
   ===============================
 */
 
-@media only screen and (min-width: 481) {
+@media only screen and (min-width: 577) {
 
   #page-heading h1 {
     flex-wrap: none;
@@ -81,12 +88,12 @@ p {
 }
 
 /* ===============================
-  Screens up to 480 pixels
+  Screens up to 576 pixels
   ===============================
 */
 
 
-@media only screen and (max-width: 480) {
+@media only screen and (max-width: 576) {
 
   #page-heading h1 {
     flex-wrap: wrap;
