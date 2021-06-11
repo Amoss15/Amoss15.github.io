@@ -3,10 +3,12 @@
 <html lang="en">
 <head>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
     <link href="styles.css" rel="stylesheet">
     <link href="index-styles.css" rel="stylesheet">
     <link href="top_btn.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="scroll_btn.js" defer></script>
@@ -32,13 +34,11 @@
                 </ul>
             </nav>
           </div>
-
         </header>
 
         <div class="container-md">
           <section id="quote"></section>
         </div>
-
     </div>
 
     <!-- Go to Top Button -->
@@ -54,53 +54,117 @@
       </div>
     </div>
 
-    <div id="projects" class="container border border-dark rounded">
+    <div id="projects" class="container">
+
+      <!--First Row-->
       <div id="row1" class="row">
         <div id="cpp" class="col-sm img-fluid">
           <a href="https://github.com/Amoss15">
-            <img src="cpp.jpg" alt="C++ Logo" width="250" height="250">
+            <img src="cpp.jpg" alt="C++ Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="187.5" height="187.5">
+            <div class="col-sm overlay shadow-lg p-4 mb-4">
+              <h3 id="header-text">Projects Using<br>C/C++</h3>
+            </div>
           </a> 
         </div>
         <div id="python" class="col-sm img-fluid">
           <a href="https://github.com/Amoss15">
-            <img src="python.jpg" alt="Python Logo" width="250" height="250">
+            <img src="python.jpg" alt="Python Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="187.5" height="187.5">
+            <div class="col-sm overlay shadow-lg p-4 mb-4">
+              <h3 id="header-text">Projects Using<br>Python</h3>
+            </div>
           </a>
         </div>
         <div id="java" class="col-sm">
           <a href="https://github.com/Amoss15">
-            <img src="java.jpg" alt="Java Logo" width="250" height="250">
+            <img src="java.jpg" alt="Java Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="187.5" height="187.5">
+            <div class="col-sm overlay shadow-lg p-4 mb-4">
+              <h3 id="header-text">Projects Using<br>Java</h3>
+            </div>
           </a>
         </div>
       </div>
 
+      <!--Second Row-->
       <div id="row2" class="row">
         <div id="boot" class="col-sm">
           <a href="https://github.com/Amoss15">
-            <img src="bootstrap.jpg" alt="Bootstrap Logo" width="250" height="250">
+            <img src="bootstrap.jpg" alt="Bootstrap Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="187.5" height="187.5">
+            <div class="col-sm overlay shadow-lg p-4 mb-4">
+              <h3 id="header-text">Projects Using<br>Bootstrap</h3>
+            </div>
           </a>
         </div>
         <div id="flask" class="col-sm">
           <a href="https://github.com/Amoss15">
-            <img src="flask.jpg" alt="Flask Logo" width="250" height="250">
+            <img src="flask.jpg" alt="Flask Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="187.5" height="187.5">
+            <div class="col-sm overlay shadow-lg p-4 mb-4">
+              <h3 id="header-text">Projects Using<br>Flask</h3>
+            </div>
           </a>
         </div>
         <div id="sql" class="col-sm">
           <a href="https://github.com/Amoss15">
-            <img src="sql.jpg" alt="SQL Logo" width="250" height="250">
+            <img src="sql.jpg" alt="SQL Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="187.5" height="187.5">
+            <div class="col-sm overlay shadow-lg p-4 mb-4">
+              <h3 id="header-text">Projects Using<br>SQL</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!--Third Row-->
+      <div id="row3" class="row">
+        <div id="html5" class="col-sm">
+          <a href="https://github.com/Amoss15">
+            <img src="html5.jpg" alt="Bootstrap Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="187.5" height="187.5">
+            <div class="col-sm overlay shadow-lg p-4 mb-4">
+              <h3 id="header-text">Projects Using<br>HTML 5</h3>
+            </div>
+          </a>
+        </div>
+        <div id="css3" class="col-sm">
+          <a href="https://github.com/Amoss15">
+            <img src="css3.jpg" alt="Flask Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="187.5" height="187.5">
+            <div class="col-sm overlay shadow-lg p-4 mb-4">
+              <h3 id="header-text">Projects Using<br>CSS</h3>
+            </div>
+          </a>
+        </div>
+        <div id="jscript" class="col-sm">
+          <a href="https://github.com/Amoss15">
+            <img src="jscript.jpg" alt="SQL Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="187.5" height="187.5">
+              <div class="col-sm overlay shadow-lg p-4 mb-4">
+                <h3 id="header-text">Projects Using<br>JavaScript</h3>
+              </div>
           </a>
         </div>
       </div>
 
     </div>
     
+   <!--Page borders-->
+   <div class="container">
+    <div class="row">
+      <div class="col-sm img-fluid">
+        <div class="hl"></div>
+      </div>
+      <div class="col-sm img-fluid">
+        <div class="hl"></div>
+      </div>
+      <div class="col-sm img-fluid">
+        <div class="hl"></div>
+      </div>
+    </div>
+   </div>
    
+
     
     <!-- Carousel -->
     <div id="caro" class="container-sm">
         
       <div class="container">
-        <h1 id="caro-cap">My Interests as an Engineer</h1>
-        <h2 id="caro-cap"></h2>
+        <h1 id="caro-cap">Current Interests</h1>
+        <h3 id="caro-cap">Click an image for more info</h3>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -113,27 +177,33 @@
           <div class="carousel-inner">
       
             <div class="item active">
-              <img src="gaming.jpg" alt="Gaming" style="width:100%;">
-              <div class="carousel-caption">
-                <h1><span>GAMING</span></h1>
-                <p id="p1">Lifelong gamer, and can't get enough!</p>
-              </div>
+              <a href="interests.html">
+                <img src="gaming.jpg" alt="Gaming" style="width:100%;">
+                <div class="carousel-caption">
+                  <h1><span>GAMING</span></h1>
+                  <p id="p1">Lifelong gamer, and can't get enough!</p>
+                </div>
+              </a>
             </div>
       
             <div class="item">
-              <img src="software.jpg" alt="Software" style="width:100%;">
-              <div class="carousel-caption">
-                <h1><span>SOFTWARE ENGINEERING</span></h1>
-                <p id="p2">There's always a project that can use a bit of tweaking!</p>
-              </div>
+              <a href="interests.html">
+                <img src="software.jpg" alt="Software" style="width:100%;">
+                <div class="carousel-caption">
+                  <h1><span>SOFTWARE ENGINEERING</span></h1>
+                  <p id="p2">There's always a project that can use a bit of tweaking!</p>
+                </div>
+              </a>
             </div>
           
             <div class="item">
-              <img src="robotics.jpg" alt="Robotics" style="width:100%;">
-              <div class="carousel-caption">
-                <h1><span>ROBOTICS</span></h1>
-                <p id="p3">Purely an interest, but looking to delve in soon!</p>
-              </div>
+              <a href="interests.html">
+                <img src="robotics.jpg" alt="Robotics" style="width:100%;">
+                <div class="carousel-caption">
+                  <h1><span>ROBOTICS</span></h1>
+                  <p id="p3">Purely an interest, but looking to delve in soon!</p>
+                </div>
+              </a>
             </div>
         
           </div>
@@ -152,7 +222,7 @@
     </div>
 
     <footer>
-      <p>Copyright</p>
+      <p>&copy; Copyright 2021</p>
     </footer>
     
   
