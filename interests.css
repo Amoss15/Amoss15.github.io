@@ -15,58 +15,57 @@
     font-weight: bold;
     top: 20%;
     text-shadow: 2px 2px 8px #888888;
-}
+    font-size: 3em;
+  }
 
-/* Contact Me headings */
   #interests-headings h4 {
     font-family: "Orbitron";
     color: #5900b3;
     font-weight: bold;
-}
+  }
 
   .container-sm#interests-headings {
     padding-bottom: 20px;
   }
   
- 
   
   /* Interests table attributes*/
-  .container-md#mytable {
+  .container-md .table {
     font-family: Arial, sans-serif;
     font-size: 1.17em;
     background-color: white;
     border: #5900b3;
   }
   
-
   
 /* ============================================
-	Screens 576px or more 
+	Screens 577px or more 
    ============================================
  */
 
 
-@media only screen and (min-width: 576) {
+@media only screen and (min-width: 577) {
 
    /* Interests table sizing */
-   #mytable {
+   .table {
     text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    width: fit-content;
   }
 }
 
 
 /* ===============================
-	 Screens up to 575 pixels
+	 Screens up to 576 pixels
    ===============================
 */
 
 
-@media only screen and (max-width: 575) {
+@media only screen and (max-width: 576) {
 
   /* Interests table sizing */ 
-   #mytable {
+   .table {
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
