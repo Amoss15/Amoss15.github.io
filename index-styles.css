@@ -27,14 +27,6 @@
     left: 0;
 }
 
-/* Carousel */
-#myCarousel {
-    margin-top: 100px;
-    margin-bottom: 100px; 
-}
-
-
-
 /* Quote animation */
 @keyframes fade_in {
     0% {opacity: 0;}
@@ -59,11 +51,12 @@
     text-align: center;
 }  
 
-/*#jscript:hover {
-    background: url("/css3.jpg") no-repeat;
-}*/
-
 /* Carousel */
+#myCarousel {
+    margin-top: 100px;
+    margin-bottom: 100px; 
+}
+
 .carousel-caption h1 span {
     display: block;
     color: black;
@@ -102,7 +95,7 @@ h3#caro-cap {
 }
 
 #header-text {
-    font-family: Orbitron; 
+    font-family: "Orbitron"; 
     font-size: 2em; 
     background-color: black; 
     text-decoration: none;
@@ -110,11 +103,6 @@ h3#caro-cap {
 
 #header-text:hover {
     text-decoration: none;
-}
-
-.hl {
-    border-top: 6px solid #5900b3;
-    width: 100%;
 }
 
 /* Welcome Fade In */ 
