@@ -79,13 +79,28 @@ background-color: white;
 text-decoration: none;
 }
 
+/* Horizontal Lines */
+.hl {
+  border-top: 6px solid #5900b3;
+  width: 100%;
+}
+
 /* Footer Styles */
-footer {
+
+footer#f1 {
   width: 100%;
   display: inline-block;
-  position: sticky;
   bottom: 0;
   height: 2em;
+}
+
+footer#f2 {
+  width: 100%;
+  display: inline-block;
+  left: 0;
+  bottom: 0;
+  height: 2em;
+  position: absolute;
 }
 
 footer p {
@@ -100,11 +115,11 @@ footer p {
 }
 
 /* ============================================
-	Tablet and Desktop Devices: 576px or more 
+	Tablet and Desktop Devices: 577px or more 
    ============================================
 */
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 577px) {
   
   header {
     font-size: 20px;
@@ -159,11 +174,11 @@ footer p {
 }
 
 /* ===============================
-	Mobile Styles up to 575 pixels
+	Mobile Styles up to 576 pixels
    ===============================
 */
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 576px) {
 
   header {
     font-size: 20px;
