@@ -12,7 +12,6 @@
 #top-bg1 {
     display: block;
     margin-bottom: 100px;
-
     background-image: url("fractals.jpg");
     background-color: black;
     background-repeat: no-repeat;
@@ -21,8 +20,7 @@
 
     /* Set up proportionate scaling */
     width: 100%;
-    height: auto;
-
+    
     /* Set up positioning */
     position: absolute;
     top: 0;
@@ -35,15 +33,7 @@
     margin-bottom: 100px; 
 }
 
-.container-md#welcome {
-    color: black;
-    text-align: center;
-    font-family: "Prata";
-    font-weight: bold;
-    margin-top: 700px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
+
 
 /* Quote animation */
 @keyframes fade_in {
@@ -51,6 +41,7 @@
     100% {opacity: 1;}
 }
 
+/* Project Cards */
 #projects p {
     font-size: 1.17em;
     text-align: right;
@@ -60,14 +51,19 @@
     text-align: center;
 }
 
-#row2 {
-    padding-top: 50px;
+#row2, #row3 {
+    padding-top: 20px;
 }
 
 .col-sm {
     text-align: center;
-}
+}  
 
+/*#jscript:hover {
+    background: url("/css3.jpg") no-repeat;
+}*/
+
+/* Carousel */
 .carousel-caption h1 span {
     display: block;
     color: black;
@@ -99,21 +95,36 @@ h1#caro-cap {
     padding-top: 100px;
 }
 
-h2#caro-cap {
+h3#caro-cap {
     font-family: "Prata";
     color: black;
     text-align: center;
-    font-weight: bold;
 }
 
+#header-text {
+    font-family: Orbitron; 
+    font-size: 2em; 
+    background-color: black; 
+    text-decoration: none;
+}
+
+#header-text:hover {
+    text-decoration: none;
+}
+
+.hl {
+    border-top: 6px solid #5900b3;
+    width: 100%;
+  }
+
 /* ============================================
-	Tablet and Desktop Devices: 576px or more 
+	Tablet and Desktop Devices: 577px or more 
    ============================================
 */
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 577px) {
 
-    /* Index page quote */
+/* Index page quote */
   #quotation {
     color: white;
     text-align: center;
@@ -135,6 +146,16 @@ h2#caro-cap {
     animation-duration: 4s;
   }
 
+  .container-md#welcome {
+    color: black;
+    text-align: center;
+    font-family: "Prata";
+    font-weight: bold;
+    margin-top: 700px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
   /* Projects Container */
   .container #projects {
     padding-top: 2em;
@@ -143,15 +164,33 @@ h2#caro-cap {
     background-color: white;
  }
 
+    /* Project Cards Overlay */
+    .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    height: 93.5%;
+    width: 50%;
+    opacity: 0;
+    transition: .5s ease-in;
+    background: black;
+    left: 25%;
+    right: 0;
+  }
+  
+  .col-sm:hover .overlay {
+    color: #5900b3;
+    opacity: 1;
+  }
 }
 
 /* ===============================
-	Mobile Styles up to 575 pixels
+	Mobile Styles up to 576 pixels
    ===============================
 */
 
-@media only screen and (max-width: 575px) {
-    
+@media only screen and (max-width: 576px) {
+   
     /* Index page quote */
     #quotation {
         color: white;
@@ -167,19 +206,36 @@ h2#caro-cap {
         font-size: 18px;
     }
 
-    /* Quote container */
+    /* Quote Container */
     .container-md #quote {
         animation-name: fade_in;
         animation-duration: 4s;
+        padding-top: 4em;
     }
 
+    .container-md#welcome {
+        color: black;
+        text-align: center;
+        font-family: "Prata";
+        font-weight: bold;
+        margin-top: 700px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    /* Project Cards */
     .container #projects {
-        padding-top: 50px;
+        padding-top: 40px;
         display: inline-block;
         margin-left: 10px;
         margin-right: 10px;
         min-width: fit-content;
-        
         background-color: white;
     }
+
+    .col-sm:hover .overlay {
+        color: #5900b3;
+        opacity: 1;
+    }
+
 }
