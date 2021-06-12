@@ -36,7 +36,14 @@
     background-color: white;
     border: #5900b3;
   }
+
+  #mytable a {
+    color:#5900b3;
+  }
   
+  thead th {
+    text-align: center;
+  }
   
 /* ============================================
 	Screens 577px or more 
