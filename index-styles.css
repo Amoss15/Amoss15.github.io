@@ -94,14 +94,15 @@ h3#caro-cap {
     text-align: center;
 }
 
-#header-text {
+h3#header-text {
     font-family: "Orbitron"; 
-    font-size: 2em; 
+    font-size: 1.8em; 
     background-color: black; 
     text-decoration: none;
+    text-align: center;
 }
 
-#header-text:hover {
+h3#header-text:hover {
     text-decoration: none;
 }
 
@@ -145,7 +146,7 @@ h3#caro-cap {
     text-align: center;
     font-family: "Prata";
     font-weight: bold;
-    margin-top: 700px;
+    margin-top: 900px;
     padding-top: 50px;
     padding-bottom: 100px;
 }
@@ -159,12 +160,12 @@ h3#caro-cap {
  }
 
     /* Project Cards Overlay */
-    .overlay {
+  .overlay {
     position: absolute;
     top: 0;
     bottom: 0px;
-    height: 93.5%;
-    width: 50%;
+    height: 188px;
+    width: 188px;
     opacity: 0;
     transition: .5s ease-in;
     background: black;
@@ -212,7 +213,7 @@ h3#caro-cap {
         text-align: center;
         font-family: "Prata";
         font-weight: bold;
-        margin-top: 700px;
+        margin-top: 800px;
         padding-top: 100px;
         padding-bottom: 100px;
     }
