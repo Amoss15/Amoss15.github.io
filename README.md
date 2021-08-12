@@ -1,2 +1,2 @@
-# Portfolio project for CIS 192
+# Portfolio project
  
