@@ -135,13 +135,13 @@ h3#header-text:hover {
   }
 
   /* Quote container */
-  .container-md #quote {
+  .container-sm #quote {
     margin-top: 220px;
     animation-name: fade_in;
     animation-duration: 4s;
   }
 
-  .container-md#welcome {
+  .container-sm#welcome {
     color: black;
     text-align: center;
     font-family: "Prata";
@@ -202,13 +202,13 @@ h3#header-text:hover {
     }
 
     /* Quote Container */
-    .container-md #quote {
+    .container-sm #quote {
         animation-name: fade_in;
         animation-duration: 4s;
         padding-top: 4em;
     }
 
-    .container-md#welcome {
+    .container-sm#welcome {
         color: black;
         text-align: center;
         font-family: "Prata";
