@@ -162,18 +162,18 @@ h3#header-text:hover {
     /* Project Cards Overlay */
   .overlay {
     position: absolute;
-    top: 0;
-    bottom: 0px;
+    top: 0px;
     height: 188px;
     width: 188px;
     opacity: 0;
     transition: .5s ease-in;
     background: black;
-    left: 25%;
-    right: 0;
+    display: block;
+    text-align: center;
   }
   
   .col-sm:hover .overlay {
+    
     color: #5900b3;
     opacity: 1;
   }
