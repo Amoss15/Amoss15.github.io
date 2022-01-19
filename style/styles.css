@@ -49,7 +49,7 @@ body, html {
   margin-bottom: 100px;
 
   position: relative;
-  background-image: url("fractals.jpg");
+  background-image: url("../images/fractals.jpg");
   background-color: white;
   background-position: center;
   background-repeat: no-repeat;
