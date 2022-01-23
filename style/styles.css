@@ -41,6 +41,7 @@ body {
 
 body, html {
   height: auto;
+  scroll-behavior: smooth;
 }
 
 /* Header background on all pages except index */
