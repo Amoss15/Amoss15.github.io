@@ -62,7 +62,20 @@ body, html {
   min-width: 100%;
 }
 
-/* All page links */
+/* GitHub Link */
+a.git:link {
+color: #5900b3;
+background-color: transparent;
+text-decoration: underline;
+}
+
+a.git:visited {
+color: gray;
+background-color: transparent;
+text-decoration: none;
+}
+
+/* All other page links */
 a:link {
 color: white;
 background-color: transparent;
