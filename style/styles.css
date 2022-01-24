@@ -64,14 +64,14 @@ body, html {
 
 /* All page links */
 a:link {
-color: white;
+color: #5900b3;
 background-color: transparent;
 text-decoration: none;
 }
 
 /* Links that have been visited */
 a:visited {
-color: white;
+color: gray;
 background-color: transparent;
 text-decoration: none;
 }
