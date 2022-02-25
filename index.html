@@ -18,6 +18,7 @@
     <script src="scroll_btn.js" defer></script>
     <script src="quotes.js" defer></script>
     <script src="scroll-effect.js" defer></script>
+    <script src="modal.js" defer></script>
 
     <!-- responsive viewport meta tag for Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -72,7 +73,9 @@
         
         <!--First Column-->
         <div id="cpp" class="col-sm">
+          <button onmouseover="modalPopUp()" class="btn" data-toggle="popover" data-trigger="hover" data-content="C++" data-placement="center">
             <img src="images/cpp.jpg" alt="C++ Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
+          </button>
         </div>
         
         <!--Second Column-->
@@ -87,25 +90,6 @@
       </div>
 
       <!--Second Row-->
-      <div id="row2" class="row">
-          
-        <!--First Column-->
-        <div id="boot" class="col-sm">
-            <img src="images/bootstrap.jpg" alt="Bootstrap Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
-        </div>
-        
-        <!--Second Column-->
-        <div id="flask" class="col-sm">
-            <img src="images/flask.jpg" alt="Flask Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
-        </div>
-          
-        <!--Third Column-->
-        <div id="sql" class="col-sm">
-            <img src="images/sql.jpg" alt="SQL Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
-        </div>
-      </div>
-
-      <!--Third Row-->
       <div id="row3" class="row">
           
         <!--First Column-->
@@ -122,6 +106,26 @@
         <div id="jscript" class="col-sm">
             <img src="images/jscript.jpg" alt="SQL Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
         </div>
+      </div>
+
+      <!--Third Row-->
+      <div id="row2" class="row">
+          
+        <!--First Column-->
+        <div id="boot" class="col-sm">
+            <!--<img src="images/bootstrap.jpg" alt="Bootstrap Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">-->
+        </div>
+
+        <!--Second Column-->
+        <div id="sql" class="col-sm">
+          <img src="images/sql.jpg" alt="SQL Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
+        </div>
+        
+        <!--Third Column-->
+        <div id="flask" class="col-sm">
+            <!--<img src="images/flask.jpg" alt="Flask Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">-->
+        </div>  
+        
       </div>
 
     </div>
@@ -397,7 +401,7 @@
   <!-- Contact Form -->
   <a name="contact_me"></a>
   <div id="myform" class="container-sm">
-  <form action="mailto:alicia.moss15@gmail.com" onsubmit="myFunction()" method="post">
+  <form action="/index" method="post">
       <label for="fname">Name</label>
       <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
@@ -418,7 +422,7 @@
   </div>
 
     <footer id="f1">
-      <p>&copy; Copyright 2021</p>
+      <p>&copy; Copyright 2022</p>
     </footer>
     
   
