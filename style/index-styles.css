@@ -157,25 +157,6 @@ h3#header-text:hover {
     width: 100%;
     display: inline-block;
     background-color: white;
- }
-
-    /* Project Cards Overlay */
-  .overlay {
-    position: absolute;
-    top: 0px;
-    height: 188px;
-    width: 188px;
-    opacity: 0;
-    transition: .5s ease-in;
-    background: black;
-    display: block;
-    text-align: center;
-  }
-  
-  .col-sm:hover .overlay {
-    
-    color: #5900b3;
-    opacity: 1;
   }
 }
 
