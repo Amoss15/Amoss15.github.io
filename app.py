@@ -1,13 +1,17 @@
+import os
 import sqlite3
-from flask import Flask, request, redirect
+from flask import Flask, request, redirect, render_template
 
 # Configure application
 app = Flask(__name__)
 
-# Connect to ContactForm database
-db = sqlite3.connect("/ContactForm.db")
+# Ensure templates are auto-reloaded
+app.config["TEMPLATES_AUTO_RELOAD"] = True
 
-@app.route("/", methods=["GET", "POST"])
+# Connect to ContactForm database
+db = sqlite3.connect("ContactForm.db")
+
+@app.route("/index", methods=["GET", "POST"])
 def index():
 
     # User reached route via POST (as by submitting a form via POST)
@@ -26,11 +30,17 @@ def index():
             return ("Please be sure to leave a message!")
 
         # Inserts contact into the database
-        db.execute("INSERT INTO Contacts (email, name, comments) VALUES (emailadd, firstname, subject)")
+        else:
+            db.execute("INSERT INTO Contacts (email, name, comments) VALUES (emailadd, firstname, subject)")
+        
+        db.close()
+        
+        return ("/static/index.html")
+    
+    else:
+        return ("/static/index.html")
 
-        return (redirect ("/"))
-
-
-app.run()
+if __name__ == '__main__':
+    app.run()
 
         
