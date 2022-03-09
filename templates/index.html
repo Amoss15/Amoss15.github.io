@@ -5,20 +5,19 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-    <link href="style/styles.css" rel="stylesheet">
-    <link href="style/index-styles.css" rel="stylesheet">
-    <link href="style/top_btn.css" rel="stylesheet" />
+    <link href="/static/styles.css" rel="stylesheet">
+    <link href="/static/index-styles.css" rel="stylesheet">
+    <link href="/static/top_btn.css" rel="stylesheet" />
 
-    <link href="style/interests.css" rel="stylesheet" />
-    <link href="style/form_styles.css" rel="stylesheet" />
-    <link href="style/about_me.css" rel="stylesheet" />
+    <link href="/static/interests.css" rel="stylesheet" />
+    <link href="/static/form_styles.css" rel="stylesheet" />
+    <link href="/static/about_me.css" rel="stylesheet" />
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="scroll_btn.js" defer></script>
-    <script src="quotes.js" defer></script>
-    <script src="scroll-effect.js" defer></script>
-    <script src="modal.js" defer></script>
+    <script src="/static/scroll_btn.js" defer></script>
+    <script src="/static/quotes.js" defer></script>
+    <script src="/static/scroll-effect.js" defer></script>
 
     <!-- responsive viewport meta tag for Bootstrap -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -33,7 +32,7 @@
           <div class="container-sm">
             <nav>
                 <ul class="nav navbar">
-                    <li class="nav-item"><a href="index.html" class="active">Home </a></li>
+                    <li class="nav-item"><a href="#index.html" class="active">Home </a></li>
                     <li class="nav-item"><a href="#interests">Interests</a></li>
                     <li class="nav-item"><a href="#about_me">About Me</a></li>
                     <li class="nav-item"><a href="#contact_me">Contact Me</a></li>
@@ -62,7 +61,6 @@
         </div>
       </div>
     </div>
-  <!-- Testing Code </div> -->
 
 
     <!-- Project Cards -->
@@ -72,21 +70,22 @@
       <div id="row1" class="row">
         
         <!--First Column-->
-        <div id="cpp" class="col-sm">
-          <!--<button onmouseover="modalPopUp()" class="btn" data-toggle="popover" data-trigger="hover" data-content="C++" data-placement="center"> -->
-            <img src="images/cpp.jpg" alt="C++ Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
-          <!-- </button> -->
+        <div id="java" class="col-sm">
+          <img src="/static/images/java.jpg" alt="Java Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
         </div>
         
         <!--Second Column-->
         <div id="python" class="col-sm">
-            <img src="images/python.jpg" alt="Python Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
+            <img src="/static/images/python.jpg" alt="Python Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
         </div>
 
         <!--Third Column-->
-        <div id="java" class="col-sm">
-            <img src="images/java.jpg" alt="Java Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
+        <div id="cpp" class="col-sm">
+          <!--<button onmouseover="modalPopUp()" class="btn" data-toggle="popover" data-trigger="hover" data-content="C++" data-placement="center"> -->
+            <img src="/static/images/cpp.jpg" alt="C++ Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
+          <!-- </button> -->
         </div>
+        
       </div>
 
       <!--Second Row-->
@@ -94,17 +93,17 @@
           
         <!--First Column-->
         <div id="html5" class="col-sm">
-            <img src="images/html5.jpg" alt="Bootstrap Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
+            <img src="/static/images/html5.jpg" alt="Bootstrap Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
         </div>
          
         <!--Second Column-->
         <div id="css3" class="col-sm">
-            <img src="images/css3.jpg" alt="Flask Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
+            <img src="/static/images/css3.jpg" alt="Flask Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
         </div>
         
         <!--Third Column-->
         <div id="jscript" class="col-sm">
-            <img src="images/jscript.jpg" alt="SQL Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
+            <img src="/static/images/jscript.jpg" alt="SQL Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
         </div>
       </div>
 
@@ -113,24 +112,24 @@
           
         <!--First Column-->
         <div id="boot" class="col-sm">
-            <img src="images/bootstrap.jpg" alt="Bootstrap Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
+            <img src="/static/images/bootstrap.jpg" alt="Bootstrap Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
         </div>
 
         <!--Second Column-->
-        <div id="sql" class="col-sm">
-          <img src="images/sql.jpg" alt="SQL Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
+        <div id="sqlimg" class="col-sm">
+          <img src="/static/images/sqlimg.jpg" alt="SQL Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
         </div>
         
         <!--Third Column-->
-        <div id="flask" class="col-sm">
-            <img src="images/flask.jpg" alt="Flask Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
+        <div id="flaskimg" class="col-sm">
+            <img src="/static/images/flaskimg.jpg" alt="Flask Logo" class="border rounded shadow-lg p-4 mb-4 bg-white" width="188" height="188">
         </div>  
         
       </div>
 
     </div>
     </div>
-    <!-- End of Testing Code-->
+
     
    <!-- Horizontal Lines -->
    <div class="container">
@@ -192,7 +191,7 @@
             <td>I went to graduate school and received an MFA, because I love creating things...
             Just like coding, it's an amazing feeling to create something, see it through to fruition,
             and have it experienced by other people.</td>
-            <td>Check out a portion of my thesis screenplay here: <a href="screenplay-ex.pdf">The Device</a></td>
+            <td>Check out a portion of my thesis screenplay here: <a href="/static/screenplay-ex.pdf">The Device</a></td>
           </tr>
           <tr>
             <th scope="row">Programming!</th>
@@ -323,48 +322,41 @@
           <div id="interests-headings" class="container-sm">
             <div class="row">
                 <div class="col-sm-12">
-                    <h1>Current Projects</h1>
+                    <h1>Just for Fun</h1>
                 </div>
             </div>
             <div class="row">
                 <div class="col-sm-12">      
-                    <h4>Click on an image to be taken to my Github repo</h4>
+                    <h4>Click on an image to be taken to some things I have worked on just for fun</h4>
                 </div>
             </div>
           </div>
-        
-        <!-- Original Code -->
-        <!-- <h1 id="caro-cap"></h1> -->
-        <!-- <h3 id="caro-cap"></h3> -->
+      
           
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
-            
           </ol>
       
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
       
             <div class="item active">
-                <img src="images/gaming.jpg" alt="Gaming" style="width:100%;">
+                <img src="/static/images/gaming.jpg" alt="Gaming" style="width:100%;">
                 <div class="carousel-caption">
                   <h1><span>GAMING</span></h1>
                   <p id="p1">  </p>
                 </div>
-              
             </div>
       
             <div class="item">
-              
-                <img src="images/software.jpg" alt="Software" style="width:100%;">
+                <img src="/static/images/software.jpg" alt="Software" style="width:100%;">
                 <div class="carousel-caption">
                   <h1><span>SOFTWARE ENGINEERING</span></h1>
                   <p id="p2">  </p>
                 </div>
-              
             </div>
           
         
@@ -401,7 +393,7 @@
   <!-- Contact Form -->
   <a name="contact_me"></a>
   <div id="myform" class="container-sm">
-  <form action="/index" method="post">
+  <form action="/static/index" method="post">
       <label for="fname">Name</label>
       <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
