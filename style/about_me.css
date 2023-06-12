@@ -1,0 +1,105 @@
+@charset "utf-8";
+
+@import url("/static/styles.css");
+
+#page-heading h1 {
+  color: black;
+  font-family: "Orbitron";
+  font-weight: bold;
+  text-shadow: 2px 2px 8px #888888;
+  text-align: left;
+  font-size: 3em;
+}
+
+#page-heading h3 {
+  color: #5900b3;
+  font-family: "Orbitron";
+  font-weight: bold;
+  text-shadow: 2px 2px 8px #888888;
+  text-align: right;
+}
+
+/* Grid styles */ 
+.container-sm#resume {
+  display: grid;
+  margin-bottom: 100px;
+  box-shadow: 5px 10px 8px 10px #888888;
+  background-color: white;
+}
+
+.container-sm#page-heading {
+  display: grid;
+  margin-bottom: 50px;
+}
+
+/* Vertical Lines */
+.vll {
+  border-left: 30px solid #5900b3;
+  margin-right: 8px;
+}
+
+.vlr {
+  border-right: 30px solid #5900b3;
+  margin-left: 8px;
+}
+
+#resume h3, #resume h4, #resume p {
+  padding-left: 8px;
+}
+
+/* About Me headings */
+h2 {
+  text-align: center;
+  padding: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Job titles */
+h3 {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Job descriptions */
+p {
+  font-size: 1.17em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p#final {
+  padding-bottom: 20px;
+}
+
+/* ===============================
+  Screens 577 pixels and above
+  ===============================
+*/
+
+@media only screen and (min-width: 577) {
+
+  #page-heading h1 {
+    flex-wrap: none;
+  }
+  
+  #page-heading h3 {
+    text-align: right;
+    margin-right: 20px;
+  }
+}
+
+/* ===============================
+  Screens up to 576 pixels
+  ===============================
+*/
+
+
+@media only screen and (max-width: 576) {
+
+  #page-heading h1 {
+    flex-wrap: wrap;
+  }
+  
+  #page-heading h3 {
+    flex-wrap: wrap;
+  }
+}
